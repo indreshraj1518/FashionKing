@@ -5,23 +5,6 @@ import { fetchAdminProducts } from "../redux/slices/adminProductSlice";
 import { fetchAllOrders } from "../redux/slices/adminOrderSlice";
 import { useEffect } from "react";
 export default function AdminHomePage() {
-  // const orders = [
-
-  //   { id: 1, customerName: "John Doe", totalPrice: 250, status: "Pending" },
-  //   { id: 2, customerName: "Jane Smith", totalPrice: 300, status: "Shipped" },
-  //   {
-  //     id: 3,
-  //     customerName: "Mike Johnson",
-  //     totalPrice: 150,
-  //     status: "Cancelled",
-  //   },
-  //   {
-  //     id: 4,
-  //     customerName: "Sarah Wilson",
-  //     totalPrice: 400,
-  //     status: "Delivered",
-  //   },
-  // ];
   const dispatch = useDispatch();
   const {
     products,
@@ -88,18 +71,10 @@ export default function AdminHomePage() {
               {orders.length > 0 ? (
                 orders.map((order) => (
                   <tr key={order.id} className="border-b">
-                    <td key={order.id} className="py-3 px-4">
-                      {order.id}
-                    </td>
-                    <td key={order.id} className="py-3 px-4">
-                      {order.customerName}
-                    </td>
-                    <td key={order.id} className="py-3 px-4">
-                      {order.totalPrice.toFixed(2)}
-                    </td>
-                    <td key={order.id} className="py-3 px-4">
-                      {order.status}
-                    </td>
+                    <td className="py-3 px-4">{order.id}</td>
+                    <td className="py-3 px-4">{order.customerName}</td>
+                    <td className="py-3 px-4">{order.totalPrice.toFixed(2)}</td>
+                    <td className="py-3 px-4">{order.status}</td>
                   </tr>
                 ))
               ) : (

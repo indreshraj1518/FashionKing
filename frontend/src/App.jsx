@@ -12,7 +12,7 @@ import OrderConfermationPage from "./pages/OrderConfermationPage";
 import OrderDetails from "./pages/OrderDetails";
 import MyorderPage from "./pages/MyorderPage";
 import AdminLayout from "./components/Admin/AdminLayout";
-import AdminHomePage from "./pages/adminHomePage";
+import AdminHomePage from "./pages/AdminHomePage";
 import UserManageMent from "./components/Admin/UserManageMent";
 import ProjectManageMent from "./components/Admin/ProjectManageMent";
 import EditProductPage from "./components/Admin/EditProductPage";
